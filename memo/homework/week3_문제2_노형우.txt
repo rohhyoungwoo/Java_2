@@ -1,0 +1,54 @@
+package week03;
+
+public class Book {
+
+	//필드
+	String title;
+	String author;
+	
+	//기본생성자
+	public Book() {
+		this.title = "알수없음";
+	}
+	
+
+	public Book(String title) {
+		this.title = title;
+		this.author = "알수없음";
+	}
+
+
+	public Book(String title, String author) {
+		this.title = title;
+		this.author = author;
+	}
+	
+	
+}
+
+
+package week03;
+
+public class EBook extends Book{
+
+	//필드
+	int sizelnMb;
+
+	//기본 생성자
+	public EBook() {
+		super();
+		this.title = "알수없음";
+		this.author = "알수없음";
+	}
+	//매개변수 생성자
+
+	public EBook(int sizelnMb) {
+		this.sizelnMb = sizelnMb;
+		this.title = "";
+		this.author = "";
+	}
+	
+	
+	
+	
+}
